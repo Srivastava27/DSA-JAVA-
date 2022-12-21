@@ -1,8 +1,7 @@
 package Array;
 
-// find the number greater than the average of the numbers of a given array
 
-class GreaterNumber{
+class GreaterEle{
     public static void main(String[] args) {
         int arr[]={2,3,4,5,6,7,8};
         int temp=0;
@@ -19,4 +18,3 @@ class GreaterNumber{
         }
     }
 }
-
