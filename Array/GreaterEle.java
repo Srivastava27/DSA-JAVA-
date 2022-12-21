@@ -1,5 +1,6 @@
 package Array;
 
+// find the number greater than the average of the numbers of a given array
 
 class GreaterEle{
     public static void main(String[] args) {
