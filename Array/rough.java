@@ -80,3 +80,35 @@ class Zeroes{
         }
     }
 }
+
+class fib{
+    public static void main(String[] args) {
+        
+        int n=9;
+        int res;
+        int num1=0;
+        int num2=1;
+        System.out.println(num1+""+num2);
+        for(int i=2;i<n;i++){
+            res=num1+num2;
+
+            System.out.print(res);
+        }
+        
+    }
+}
+
+
+//factorial
+class Factorial{
+    public static void main(String[] args) {
+        int fact=1;
+        int n=5;
+
+        for(int i=1;i<=n;++i){
+            fact=fact*i;
+            
+        }
+        System.out.println("Factorial of "+ n +" is "+ fact);
+    }
+}
