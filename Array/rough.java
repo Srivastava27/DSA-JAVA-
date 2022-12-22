@@ -81,22 +81,20 @@ class Zeroes{
     }
 }
 
-class fib{
-    public static void main(String[] args) {
+// class fib{
+//     public static void main(String[] args) {
         
-        int n=9;
-        int res;
-        int num1=0;
-        int num2=1;
-        System.out.println(num1+""+num2);
-        for(int i=2;i<n;i++){
-            res=num1+num2;
+//        int a=0
+//        int i=0;
 
-            System.out.print(res);
-        }
+//        for(;i<=n-1;i++){
+//         fib=fib+i;
+
+//        }
+//        System.out.println("fib series of "+ n + " is "+ fib);
         
-    }
-}
+//     }
+// }
 
 
 //factorial
@@ -110,5 +108,36 @@ class Factorial{
             
         }
         System.out.println("Factorial of "+ n +" is "+ fact);
+    }
+}
+
+class fib{
+
+
+    public static void main(String[] args) {
+        int n=9;
+        int res=fibonacci(n);
+        System.out.println(res);
+    }
+    
+    public static int fibonacci(int n){
+
+        if(n==0){
+            return 0;
+        }
+        if(n==1){
+            return 1;
+        }
+
+        int a=0;
+        int b=1;
+        int res=0;
+
+        for(int i=1;i<n;i++){
+            res=a+b;
+            a=b;
+            b=res;
+        }
+        return res;
     }
 }
