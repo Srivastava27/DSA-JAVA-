@@ -1,5 +1,7 @@
 package Array;
 
+import java.util.Scanner;
+
 // find the number greater than the average of the numbers of a given array
 
 class GreaterNumber{
@@ -139,5 +141,20 @@ class fib{
             b=res;
         }
         return res;
+    }
+}
+
+// take two numbers from user and find their product
+
+class User{
+    public static void main(String[] args) {
+        int res=0;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter two numbers : ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+
+        res=a*b;
+        System.out.println(res);
     }
 }
