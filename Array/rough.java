@@ -158,3 +158,47 @@ class User{
         System.out.println(res);
     }
 }
+
+
+
+public class rough{
+    public static void main(String[] args) {
+        Animal a1=new Animal();
+        // Animal a2=new Animal();
+
+        a1.name="Dog";
+        a1.legs=4;
+
+       a1.walk();
+       a1.walk(5);
+    }
+}
+
+class Animal{
+    int legs;
+    String name;
+    
+    void walk(){
+        System.out.println(name + " is walking");
+    }
+
+    void walk(int steps){
+        System.out.println(name+" walked "+steps+" steps ");
+    }
+}
+
+class matrix{
+    public static void main(String[] args) {
+        int arr[][]={
+            {2,3,4},
+            {5,5,5},
+            {0,0,0}
+        };
+        for(int i=0;i<arr.length;i++){
+            for(int j=0;j<arr.length;j++){
+                System.out.print(arr[i][j]);
+            }
+            System.out.println();
+        }
+    }
+}
