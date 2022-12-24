@@ -153,24 +153,6 @@ class twoDarray{
 }
 }
 
-class matrixMultiplication{
-    public static void main(String[] args) {
-        int arr1[][]={
-            {1,2,3},
-            {1,2,3}
-        };
-        int arr2[][]={
-            {1,2,3},
-            {1,2,3},
-        };
-        int arr3[]=new int[][]
-        for(int i=0;i<arr1.length;i++){
-            for(int j=0;j<arr1.length;j++){
-
-            }
-        }
-     }
-}
 
 class MultiplyMatrix{
     public static void main(String[] args) {
