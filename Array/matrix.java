@@ -45,6 +45,70 @@ class matrices{
     }
 }
 
+
+//addition with user input
+
+class AddMatrix{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter the size of row 1 :");
+        int row=sc.nextInt();
+        
+        System.out.println("enter the size of column 1 : ");
+        int col=sc.nextInt();
+        
+        System.out.println();
+        int arr[][]=new int[row][col];
+
+        System.out.println("Enter elements of first matrix :");
+        for(int i=0;i<row;i++){
+            for(int j=0;j<col;j++){
+                arr[i][j]=sc.nextInt();
+               
+            }
+        }
+        System.out.println("Matrix 1 :");
+        for(int i=0;i<row;i++){
+            for(int j=0;j<col;j++){
+                System.out.print(arr[i][j]+" "); 
+    }
+    System.out.println();
+}
+System.out.println("Enter the size of row 2 :");
+int row2=sc.nextInt();
+
+System.out.println("Enter the size of column 2 : ");
+int col2=sc.nextInt();
+
+System.out.println();
+int arr2[][]=new int[row2][col2];
+
+System.out.println("Enter elements of matrix 2:");
+for(int i=0;i<row2;i++){
+    for(int j=0;j<col2;j++){
+        arr2[i][j]=sc.nextInt();
+       
+    }
+}
+System.out.println("Matrix 2 :");
+for(int i=0;i<row2;i++){
+    for(int j=0;j<col2;j++){
+        System.out.print(arr2[i][j]+" "); 
+}
+System.out.println();
+}
+System.out.println("Result of addition of two matrices :");
+int arr3[][]=new int[arr.length][arr.length];
+for(int i=0;i<arr.length;i++){
+    for(int j=0;j<arr.length;j++){
+        arr3[i][j]=arr[i][j]+arr2[i][j];
+        System.out.print(arr3[i][j]+" ");
+    }
+    System.out.println();
+    }
+}
+
 //searching for an element in a matrix
 
 class twoDarray{
@@ -75,5 +139,16 @@ class twoDarray{
     System.out.println();
 }
 
+    System.out.println("Enter key which you want to find :");
+    int key=sc.nextInt();
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+        if(arr[i][j]==key){
+            System.out.println(i+" , "+j);
+        }    
+        }
+
     }
+}
+}
 }
