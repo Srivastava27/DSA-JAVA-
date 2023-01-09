@@ -1,6 +1,6 @@
 package BinarySearch;
 
-class third{
+class last_Occurence{
 
     public static int lastOccurence(int arr[],int key, int start,int end){
         int ans=-1;
