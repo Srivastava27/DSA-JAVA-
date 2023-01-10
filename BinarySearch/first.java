@@ -45,7 +45,7 @@ class second{
 
 //////////////////////////////////////////////////////////////////////////////
 
-class third{
+class th{
 
     public static int lastOccurence(int arr[],int key, int start,int end){
         int ans=-1;

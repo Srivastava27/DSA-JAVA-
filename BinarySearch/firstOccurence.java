@@ -1,3 +1,5 @@
+//index of firest occurence of an element in a sorted array
+
 package BinarySearch;
 
 
@@ -20,8 +22,8 @@ class third{
         return ans;
     }
     public static void main(String[] args) {
-        int arr[]={2,6,7,7,7,8,10,11,13,13,13,15,17};
-        int key=7;
+        int arr[]={2,6,7,7,7,8,8,8,8,8,8,8,11,11,11,11,11,13,15,17,17,17,18};
+        int key=11;
         int start=0;
         int end=arr.length;
         int res=leftOccurence(arr, key, start, end);
