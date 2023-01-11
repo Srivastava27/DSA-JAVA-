@@ -2,7 +2,7 @@ package BinarySearch;
 
 class SearchInRotatedSortedArray{
     
-    public static int ans(int arr[],int key,int start,int end,int temp){
+    public static int ans(int arr[],int key,int start,int end){
         while(start<=end){
             int mid=(start+end)/2;
             if(arr[mid]==key)return mid;
@@ -10,18 +10,14 @@ class SearchInRotatedSortedArray{
                 if(key<arr[mid] && key>=arr[start]){
                     end=mid-1;
                 }else{
-                    // if(key>arr[mid] && key>arr[start]){
+                    
                         start=mid+1;
                     }
             }else{
-                // if(arr[end]<arr[mid]){
                     if(key>arr[mid] && key<arr[end]){
                         start=mid+1;
                     }else{
-                        // if(key<arr[mid] && key<arr[end]){
-                            end=mid-1;
-                        
-                        
+                        end=mid-1;    
                     }
                 }
 
@@ -35,8 +31,7 @@ class SearchInRotatedSortedArray{
         int key=60;
         int start=0;
         int end=arr.length-1;
-        int temp=0;
-        int res=ans(arr, key, start, end, temp);
+        int res=ans(arr, key, start, end);
         System.out.println(res);
     }
 }
