@@ -20,7 +20,7 @@ class Count{
         }
         return ans;
     }
-
+//Second occurence
     public static int last(int arr[],int key, int start,int end){
         int ans=-1;
         while(start<=end){

@@ -21,7 +21,7 @@ class second{
         while(start<=end){
             int mid=(start+end)/2;
             if(arr[mid]==key) return mid;
-            if(key > arr[mid]){
+            else if(key > arr[mid]){
                 start=mid; 
             }else{
                 end=mid;
