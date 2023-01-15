@@ -18,5 +18,6 @@ class Smallest{
       }else{
         System.out.println("Smallest number : "+c);
       }
+      sc.close();
     }
 }
