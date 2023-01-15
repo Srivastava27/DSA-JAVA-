@@ -13,5 +13,6 @@ class arrayMain{
         for(int i=1;i<5;i++){
             System.out.println("age of roll no "+i+" "+"is :"+arr[i]);
         }
+        sc.close();
     }
 }
