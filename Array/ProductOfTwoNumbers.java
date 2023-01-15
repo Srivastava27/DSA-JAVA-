@@ -14,5 +14,7 @@ class ProductOfTwoNumbers{
 
         res=a*b;
         System.out.println("multiplication of two numbers : "+res);
+        sc.close();
     }
+    
 }
