@@ -156,6 +156,7 @@ class User{
 
         res=a*b;
         System.out.println(res);
+        sc.close();
     }
 }
 
