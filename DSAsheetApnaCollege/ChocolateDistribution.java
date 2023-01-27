@@ -1,8 +1,13 @@
-///ques 5//////
+///-------------------Ques 5-----------------------///
+
+
+///-------------------without ArrayList--------------------///
 
 package DSAsheetApnaCollege;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class ChocolateDistribution {
 
@@ -38,5 +43,40 @@ public static int Minn_diff(int arr[],int students, int min_diff){
         int min_diff=Integer.MAX_VALUE;     
         int res=Minn_diff(arr, students, min_diff);
         System.out.println(res);                       
+    }
+}
+
+
+///---------------------------with ArrayList-------------------------//
+
+class ChocoDistribution{
+
+    public static long Min_diff(ArrayList<Integer> list, int students, int min){
+
+        for (Integer i : list) {
+            if(min>(i+students-1)-i){
+                min=(i+students-1)-i;
+            }
+        }
+
+        return (long)min;
+    } 
+
+
+    public static void main(String[] args) {
+        ArrayList<Integer> list=new ArrayList<>();
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(7);
+        list.add(9);
+        list.add(12);
+        list.add(56);
+        System.out.println(list);
+
+        int students=3;
+        int min=Integer.MAX_VALUE;
+        long res=Min_diff(list, students, min);
+        System.out.println(res);
     }
 }
