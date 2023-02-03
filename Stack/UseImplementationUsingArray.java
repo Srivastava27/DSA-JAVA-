@@ -1,6 +1,6 @@
 package Stack;
 
-public class UseImplementation {
+class UseImplementationUsingArray {
     public static void main(String[] args) throws Exception {
         Implementation stack=new Implementation(3);
 
