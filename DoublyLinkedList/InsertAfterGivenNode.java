@@ -57,7 +57,7 @@ class InsertAfterGivenNode {
 
         // print(addNodes(5, n1, n2));
         dList.print(null);
-        dList.addNodes(7);
+        // dList.addNodes(7);
         
         
     }
