@@ -1,11 +1,13 @@
 package Stack;
 
+import java.util.ArrayDeque;
 import java.util.Stack;
 
 class UseImplementationUsingLinkedList {
     public static void main(String[] args) throws Exception {
         ImplementationUsingLinkedList stack=new ImplementationUsingLinkedList();
         // Stack<Integer> stack=new Stack<>();
+        // ArrayDeque<Integer> stack=new ArrayDeque<>();
         
         stack.push(5);
         stack.push(6);

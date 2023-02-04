@@ -45,6 +45,7 @@ class Parenthesis {
 
     public static void main(String[] args) {
        String str="{a[(a-b)(i}";
+    //    String str3="{a[(a-b)(i)]}";
     //    String str2=" ";
 
        System.out.println(isValid(str));
