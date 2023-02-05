@@ -15,7 +15,7 @@ class UseImplementationUsingLinkedList {
         stack.push(8);
 
         System.out.println("Popped elements: "+stack.pop());
-        System.out.println("Peak of the Stack: "+stack.peak());
+        System.out.println("Peak of the Stack: "+stack.peek());
         System.out.println("Size of the stack: "+stack.size());
         System.out.println("Stack is empty(true/false): "+stack.isEmpty());
 

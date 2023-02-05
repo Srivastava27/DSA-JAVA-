@@ -36,7 +36,7 @@ public class ImplementationUsingLinkedList {
         return ans;
     }
 
-    int peak()throws Exception{
+    int peek()throws Exception{
         if(isEmpty())throw new Exception("Stack is empty");
         return head.data;
     }
