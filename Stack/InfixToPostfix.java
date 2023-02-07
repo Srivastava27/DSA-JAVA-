@@ -20,7 +20,7 @@ class postfix_exp{
     }
     
 
-    static void postfix_expp(String str){
+    static StringBuilder postfix_expp(String str){
         StringBuilder s=new StringBuilder();
         ArrayDeque<Character> stack=new ArrayDeque<>();
 
@@ -30,9 +30,7 @@ class postfix_exp{
                 stack.push(curr);
             }else if(curr==')'){
                 while(stack.peek()!='('){
-                    if(precedence(curr)<=precedence(stack.peek())){
-                        s.append(stack.pop());
-                    }
+                s.append(stack.pop());
                 }
                 stack.pop();
             }else if(operator(curr)){
@@ -48,16 +46,55 @@ class postfix_exp{
 
             s.append(stack.pop());
         }
-        System.out.println(s);
+        // System.out.println(s);
+        return s;
 
     }
 
 
+
+    static int calculate(int first,int second,char curr){
+        switch(curr){
+            case '+':
+            return first+second;
+            case '-':
+            return first-second;
+            case '*':
+            return first*second;
+            case '/':
+            return first/second;
+        }
+        return 0;
+    }
+    
+    static int evaluation(StringBuilder str){
+        ArrayDeque<Integer> stack=new ArrayDeque<>();
+        for(int i=0;i<str.length();i++){
+            char curr=str.charAt(i);
+            if(operator(curr)){
+                int second=stack.pop();
+                int first=stack.pop();
+                int eval=calculate(first, second, curr);
+                stack.push(eval);
+            }else{
+                stack.push(curr-'0');
+            }
+        }
+        // System.out.println(stack.pop());
+        return stack.pop();
+    }
+
+
+
     public static void main(String[] args) {
-        String input="(a+b)*c";
+        StringBuilder output=new StringBuilder();
+        String input="(2+3)*4";
         // String output=postfix_expp(input);
         // System.out.println(output);
-        postfix_expp(input);
+        output=postfix_expp(input);
+        System.out.println(output);
+        int result=evaluation(output);
+        System.out.println(result);
     }
 }
 
