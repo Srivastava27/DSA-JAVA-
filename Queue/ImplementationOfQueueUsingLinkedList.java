@@ -10,7 +10,7 @@ class ImplementationOfQueueUsingLinkedList {
             Node newNode=new Node(data);
             if(!isEmpty()){
                 rear.next=newNode;
-                newNode=rear;
+                rear=newNode;
                 rear.next=null;
             }else{
                 front=rear=newNode;
@@ -29,6 +29,10 @@ class ImplementationOfQueueUsingLinkedList {
         boolean isEmpty(){
             if(front==null)return true;
             return false;
+        }
+        int getFront()throws Exception{
+            if(isEmpty())throw new Exception("Queue is empty");
+            return front.data;
         }
 }
 
