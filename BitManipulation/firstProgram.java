@@ -3,7 +3,7 @@ package BitManipulation;
 class first{
     public static void main(String[] args) {
         {
-            // Initial values
+            // we are taking some values
             int a = 5;
             int b = 7;
      
